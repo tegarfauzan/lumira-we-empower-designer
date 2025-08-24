@@ -7,6 +7,7 @@ body {
 
 @theme {
   --breakpoint-tablet: 640px;
+  --breakpoint-dekstop: 1440px;
 
   --color-Lumira-Black: #000000;
   --color-Lumira-Warning-200: #FEDF89;
