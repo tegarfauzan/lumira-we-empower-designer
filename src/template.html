@@ -21,31 +21,137 @@
     <title>Lumira | Homepage</title>
   </head>
   <body class="bg-gray-400">
-    <section id="BecomeALumiraCreator" class="tablet:mt-[14px] tablet:h-fit dekstop:h-[468px] tablet:rounded-[18px] relative mt-2 h-[620px] overflow-hidden rounded-[14px]">
-        <img src="assets/images/backgrounds/bg-become-a-lumira.png" alt="image" class="tablet:rounded-[18px] absolute top-0 bottom-0 left-0 h-full w-full rounded-[14px]" />
-        <img src="assets/images/backgrounds/become-mask.png" alt="image" class="absolute top-0 left-0 z-10 h-[464.43px] w-[815.59px]" />
-        <div class="tablet:flex-row tablet:h-full tablet:justify-center tablet:pl-[31px] tablet:pt-0 dekstop:px-0 tablet:max-w-[1232px] relative z-30 mx-auto flex h-full flex-1 flex-col items-center gap-[16.48px] px-[25px] pt-[48px]">
-          <div class="tablet:gap-[40px] tablet:py-[60px] dekstop:py-0 flex w-full max-w-[720px] tablet:max-w-[400px] dekstop:max-w-[720px] flex-col gap-[24px]">
-            <div class="tablet:gap-6 relative z-20 flex flex-col gap-4">
-              <h2 class="dekstop:text-[60px] dekstop:leading-[70px] tablet:text-[48px] tablet:leading-[60px] text-[36px] leading-[44px] font-semibold text-white">Become a Lumira creator & earn on every sale!</h2>
-              <p class="text-Lumira-Indigo-100 dekstop:text-[20px] dekstop:leading-[30px] text-base leading-[24px] tablet:text-[18px] tablet:leading-[28px]">Sell your UI/UX templates, code kits, and design assets in one marketplace. Set your price and reach thousands of professionals.</p>
-            </div>
-            <a href="" class="w-fit shrink-0">
-              <div class="bg-Lumira-Gray-900 tablet:gap-1.5 tablet:px-5 tablet:py-2.5 flex w-fit items-center gap-2 rounded-full border border-[#090807] px-4 py-2 transition-all duration-300 hover:ring-2 hover:ring-[#090807]">
-                <p class="tablet:text-sm text-xs leading-[20px] font-medium text-white">Get started</p>
-                <img src="assets/images/icons/arrow-top-right.svg" alt="Arrow Top Right" class="tablet:size-4 size-[14px] shrink-0" />
+    <div id="Modal-Filter" class="tablet:hidden absolute top-0 left-0 z-1010  h-full w-full items-end bg-[#101828]/80 px-4 pb-4 backdrop-blur-xs">
+      <button id="Close-Filter" type="button" class="absolute top-[15px] right-[16px] z-50 cursor-pointer">
+        <div class="border-Lumira-Gray-400 hover:ring-Lumira-Gray-400 relative flex size-[50px] shrink-0 items-center justify-center rounded-full border bg-[#EAECF033] transition-all duration-300 hover:ring-2">
+          <img src="assets/images/icons/x-mark-white.svg" alt="" class="size-4 shrink-0" />
+        </div>
+      </button>
+      <form action="" class="max-h-[calc(100vh-98px)] w-full overflow-hidden">
+        <div id="Content" class="flex h-full max-h-[calc(100vh-98px)] w-full flex-col gap-6 overflow-y-auto rounded-[14px] bg-white px-2 pt-4 pb-2 [&::-webkit-scrollbar]:hidden">
+          <div class="flex flex-col gap-6">
+            <label class="featured flex items-center justify-between px-2">
+              <h5 class="text-Lumira-Gray-900 font-medium">Featured</h5>
+              <div class="group toggle-switch relative w-fit shrink-0">
+                <input type="checkbox" class="absolute top-0 left-0 z-10 h-full w-full cursor-pointer opacity-0" />
+                <div class="toggle-ui group-has-checked:bg-Lumira-Indigo-600 bg-Lumira-Gray-400 border-Lumira-Gray-200 h-6 w-[44px] rounded-full border p-1 transition-all duration-300">
+                  <div class="relative h-full w-full">
+                    <div class="toggle-ui-button-check absolute top-1/2 left-0 size-4 shrink-0 -translate-y-1/2 rounded-full bg-white transition-all duration-300 group-has-checked:left-full group-has-checked:-translate-x-[100%]"></div>
+                  </div>
+                </div>
               </div>
-            </a>
-          </div>
-          <div class="tablet:h-full flex mt-auto tablet:flex tablet:mt-auto tablet:items-end">
-            <div class="dekstop:pt-[61px] tablet:pt-[108px] tablet:pr-0 dekstop:pr-[21px] tablet:ml-auto tablet:mr-0 relative mx-auto shrink-0 pt-[40px] pr-[23px]">
-              <img src="assets/images/backgrounds/hero-become-a-lumira-website.png" alt="image" class="tablet:block hidden h-fit w-[380px] tablet:w-[340px] tablet:h-fit shrink-0 drop-shadow-2xl shadow-[#383CBC]" />
-              <img src="assets/images/backgrounds/hero-become-a-lumira-website-mobile-first.png" alt="image" class="tablet:hidden h-[210px] w-[273px] shrink-0 drop-shadow-2xl shadow-[#0208b7]" />
-              <img src="assets/images/backgrounds/hero-become-a-lumira-mobile.png" alt="image" class="dekstop:w-[117.3px] tablet:mr-[27.4px] dekstop:mr-0 tablet:w-[101.6px] h-fit absolute top-0 right-0 w-[99px] shrink-0 drop-shadow-2xl shadow-[#0208b7]" />
+            </label>
+            <div class="format flex flex-col gap-3">
+              <button type="button" data-expand="Format-J" class="flex cursor-pointer items-center justify-between px-2">
+                <h5 class="text-Lumira-Gray-900 font-medium">Format</h5>
+                <svg class="-rotate-180 transition-all duration-300" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.16675 5.3335L8.50008 10.6668L13.8334 5.3335" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <div id="Format-J" class="bg-Lumira-Gray-200 grid grid-cols-3 gap-y-1 rounded-xl p-[6px]">
+                <label class="group cursor-pointer">
+                  <input type="radio" name="format" value="any" class="peer hidden" />
+                  <div class="filter-list-mobile-container flex flex-col items-center gap-2 rounded-lg px-2 py-3 transition-all duration-300 peer-checked:bg-white hover:bg-white">
+                    <img src="assets/images/icons/all.svg" alt="icon" class="size-5 shrink-0" />
+                    <h5 class="text-Lumira-Gray-500 group-hover:text-Lumira-Gray-900 group-has-checked:text-Lumira-Gray-900 text-xs leading-[18px] transition-all duration-300">Any format</h5>
+                  </div>
+                </label>
+                <label class="group cursor-pointer">
+                  <input type="radio" name="format" value="Blender" class="peer hidden" />
+                  <div class="filter-list-mobile-container flex flex-col items-center gap-2 rounded-lg px-2 py-3 transition-all duration-300 peer-checked:bg-white hover:bg-white">
+                    <img src="assets/images/icons/blender.svg" alt="icon" class="size-5 shrink-0" />
+                    <h5 class="text-Lumira-Gray-500 group-hover:text-Lumira-Gray-900 group-has-checked:text-Lumira-Gray-900 text-xs leading-[18px] transition-all duration-300">Blender</h5>
+                  </div>
+                </label>
+                <label class="group cursor-pointer">
+                  <input type="radio" name="format" value="OBJ" class="peer hidden" />
+                  <div class="filter-list-mobile-container flex flex-col items-center gap-2 rounded-lg px-2 py-3 transition-all duration-300 peer-checked:bg-white hover:bg-white">
+                    <img src="assets/images/icons/obj.svg" alt="icon" class="size-5 shrink-0" />
+                    <h5 class="text-Lumira-Gray-500 group-hover:text-Lumira-Gray-900 group-has-checked:text-Lumira-Gray-900 text-xs leading-[18px] transition-all duration-300">OBJ</h5>
+                  </div>
+                </label>
+                <label class="group cursor-pointer">
+                  <input type="radio" name="format" value="GLB" class="peer hidden" />
+                  <div class="filter-list-mobile-container flex flex-col items-center gap-2 rounded-lg px-2 py-3 transition-all duration-300 peer-checked:bg-white hover:bg-white">
+                    <img src="assets/images/icons/glb.svg" alt="icon" class="size-5 shrink-0" />
+                    <h5 class="text-Lumira-Gray-500 group-hover:text-Lumira-Gray-900 group-has-checked:text-Lumira-Gray-900 text-xs leading-[18px] transition-all duration-300">GLB</h5>
+                  </div>
+                </label>
+                <label class="group cursor-pointer">
+                  <input type="radio" name="format" value="FBX" class="peer hidden" />
+                  <div class="filter-list-mobile-container flex flex-col items-center gap-2 rounded-lg px-2 py-3 transition-all duration-300 peer-checked:bg-white hover:bg-white">
+                    <img src="assets/images/icons/fbx.svg" alt="icon" class="size-5 shrink-0" />
+                    <h5 class="text-Lumira-Gray-500 group-hover:text-Lumira-Gray-900 group-has-checked:text-Lumira-Gray-900 text-xs leading-[18px] transition-all duration-300">FBX</h5>
+                  </div>
+                </label>
+                <label class="group cursor-pointer">
+                  <input type="radio" name="format" value="PNG" class="peer hidden" />
+                  <div class="filter-list-mobile-container flex flex-col items-center gap-2 rounded-lg px-2 py-3 transition-all duration-300 peer-checked:bg-white hover:bg-white">
+                    <img src="assets/images/icons/png.svg" alt="icon" class="size-5 shrink-0" />
+                    <h5 class="text-Lumira-Gray-500 group-hover:text-Lumira-Gray-900 group-has-checked:text-Lumira-Gray-900 text-xs leading-[18px] transition-all duration-300">PNG</h5>
+                  </div>
+                </label>
+                <label class="group cursor-pointer">
+                  <input type="radio" name="format" value="SVG" class="peer hidden" />
+                  <div class="filter-list-mobile-container flex flex-col items-center gap-2 rounded-lg px-2 py-3 transition-all duration-300 peer-checked:bg-white hover:bg-white">
+                    <img src="assets/images/icons/svg.svg" alt="icon" class="size-5 shrink-0" />
+                    <h5 class="text-Lumira-Gray-500 group-hover:text-Lumira-Gray-900 group-has-checked:text-Lumira-Gray-900 text-xs leading-[18px] transition-all duration-300">SVG</h5>
+                  </div>
+                </label>
+              </div>
             </div>
+            <div class="sort-by flex flex-col gap-3">
+              <button type="button" data-expand="Sort-By-J" class="flex cursor-pointer items-center justify-between px-2">
+                <h5 class="text-Lumira-Gray-900 font-medium">Sort by</h5>
+                <svg class="-rotate-180 transition-all duration-300" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.16675 5.3335L8.50008 10.6668L13.8334 5.3335" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <div id="Sort-By-J" class="bg-Lumira-Gray-200 flex flex-col gap-y-1 rounded-xl p-[6px]">
+                <label class="group cursor-pointer">
+                  <input type="radio" name="sort" value="recently" class="peer hidden" />
+                  <div class="filter-list-mobile-container flex items-center gap-2 rounded-lg px-2 py-3 transition-all duration-300 peer-checked:bg-white hover:bg-white">
+                    <img src="assets/images/icons/browse-all/check-sm.svg" alt="icon" class="size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-has-checked:opacity-100" />
+                    <h5 class="text-Lumira-Gray-500 group-hover:text-Lumira-Gray-900 group-has-checked:text-Lumira-Gray-900 text-sm leading-5 transition-all duration-300">Recently added</h5>
+                  </div>
+                </label>
+                <label class="group cursor-pointer">
+                  <input type="radio" name="sort" value="trending" class="peer hidden" />
+                  <div class="filter-list-mobile-container flex items-center gap-2 rounded-lg px-2 py-3 transition-all duration-300 peer-checked:bg-white hover:bg-white">
+                    <img src="assets/images/icons/browse-all/check-sm.svg" alt="icon" class="size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-has-checked:opacity-100" />
+                    <h5 class="text-Lumira-Gray-500 group-hover:text-Lumira-Gray-900 group-has-checked:text-Lumira-Gray-900 text-sm leading-5 transition-all duration-300">Trending</h5>
+                  </div>
+                </label>
+                <label class="group cursor-pointer">
+                  <input type="radio" name="sort" value="highest" class="peer hidden" />
+                  <div class="filter-list-mobile-container flex items-center gap-2 rounded-lg px-2 py-3 transition-all duration-300 peer-checked:bg-white hover:bg-white">
+                    <img src="assets/images/icons/browse-all/check-sm.svg" alt="icon" class="size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-has-checked:opacity-100" />
+                    <h5 class="text-Lumira-Gray-500 group-hover:text-Lumira-Gray-900 group-has-checked:text-Lumira-Gray-900 text-sm leading-5 transition-all duration-300">Highest Price</h5>
+                  </div>
+                </label>
+                <label class="group cursor-pointer">
+                  <input type="radio" name="sort" value="lowest" class="peer hidden" />
+                  <div class="filter-list-mobile-container flex items-center gap-2 rounded-lg px-2 py-3 transition-all duration-300 peer-checked:bg-white hover:bg-white">
+                    <img src="assets/images/icons/browse-all/check-sm.svg" alt="icon" class="size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-has-checked:opacity-100" />
+                    <h5 class="text-Lumira-Gray-500 group-hover:text-Lumira-Gray-900 group-has-checked:text-Lumira-Gray-900 text-sm leading-5 transition-all duration-300">Lowest Price</h5>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="buttons flex gap-1">
+            <button class="buttons-range-reset cursor-pointer" type="button">
+              <div class="bg-Lumira-Gray-900 flex size-[50px] shrink-0 items-center justify-center rounded-xl">
+                <img src="assets/images/icons/reset-white.svg" alt="icon" class="size-4 shrink-0" />
+              </div>
+            </button>
+            <button id="Apply-Filter" type="submit" class="buttons-range-apply flex-1 cursor-pointer">
+              <div class="bg-Lumira-Indigo-600 flex flex-1 items-center justify-center rounded-xl py-[15px] text-center text-[14px] leading-[20px] font-medium text-white shadow-[#0908070D] transition-all duration-300 hover:shadow-xl">Apply filter</div>
+            </button>
           </div>
         </div>
-      </section>
+      </form>
+    </div>
 
     <!-- Third-party Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

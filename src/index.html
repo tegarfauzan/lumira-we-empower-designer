@@ -4855,8 +4855,8 @@
           <img src="assets/images/icons/x-mark-white.svg" alt="" class="size-[18px] shrink-0" />
         </div>
       </button>
-      <div class="navbar-top-modal-content flex size-full items-center justify-center">
-        <div class="h-[638px] w-[600px]">
+      <div class="navbar-top-modal-content relative flex size-full pt-[86px] justify-center">
+        <div class="pt-[calc(((100vh-760px)/2)+64px)] w-[600px]">
           <div class="flex flex-col gap-3">
             <form action="" class="peer">
               <div class="modal-content-search focus-within:ring-Lumira-Indigo-600 flex h-[70px] w-full items-center gap-3 rounded-full bg-white py-[6px] pr-[6px] pl-6 transition-all duration-300 focus-within:ring-3">
@@ -4870,8 +4870,8 @@
               </div>
             </form>
             <div class="container-lists peer-has-placeholder-shown:hidden">
-              <div class="modal-content-lists border-Lumira-Gray-200 flex h-[484px] w-full rounded-2xl border-[1.5px] bg-white px-[6px] pt-[6px] pb-3">
-                <div class="list flex w-full flex-col items-center gap-[6px] overflow-y-auto [&::-webkit-scrollbar]:hidden">
+              <div class="modal-content-lists border-Lumira-Gray-200 flex min-h-[300px] h-full overflow-hidden max-h-[calc(100vh-602px)] w-full rounded-2xl border-[1.5px] bg-white px-[6px] pt-[6px] pb-3">
+                <div class="list flex w-full flex-col items-center gap-[6px] min-h-[300px] h-full [&::-webkit-scrollbar]:hidden overflow-y-auto max-h-[calc(100vh-602px)]">
                   <div class="list hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex w-full items-center justify-between gap-4 rounded-[12px] border border-transparent p-[6px] transition-all duration-300">
                     <div class="list-image border-Lumira-Gray-200 relative flex h-[100px] w-[166px] shrink-0 items-center justify-center overflow-hidden rounded-lg border-[0.51px]">
                       <img src="assets/images/thumbnails/thumbnail-result-input-navtop.png" alt="thumbnails" class="h-full w-full object-cover" />
@@ -4980,13 +4980,6 @@
                         <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Mobile App</p>
                       </div>
                       <p class="list-desc-price text-Lumira-Gray-600 text-xs leading-[18px]">IDR 200.000</p>
-                    </div>
-                  </div>
-                  <div class="not-found flex h-full w-full flex-col items-center justify-center gap-4">
-                    <img src="assets/images/icons/browse-all/no-match.svg" alt="icon" class="h-[60px] w-[60px] shrink-0" />
-                    <div class="flex w-[444px] flex-col items-center gap-[12px]">
-                      <h2 class="text-Lumira-Gray-900 text-center text-[24px] leading-[32px] font-medium">Oops, no match!</h2>
-                      <p class="text-Lumira-Gray-500 text-center text-lg leading-[28px]">We couldn’t find results for your search. Try tweaking your keywords or filter and try again.</p>
                     </div>
                   </div>
                 </div>
