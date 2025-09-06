@@ -590,10 +590,6 @@
     width: 28px;
     height: 28px;
   }
-  .size-\[30\] {
-    width: 30;
-    height: 30;
-  }
   .size-\[30px\] {
     width: 30px;
     height: 30px;
@@ -798,6 +794,9 @@
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
+  .w-\[1\] {
+    width: 1;
+  }
   .w-\[1px\] {
     width: 1px;
   }
@@ -839,6 +838,12 @@
   }
   .w-\[140px\] {
     width: 140px;
+  }
+  .w-\[153px\] {
+    width: 153px;
+  }
+  .w-\[163px\] {
+    width: 163px;
   }
   .w-\[166px\] {
     width: 166px;
@@ -1789,17 +1794,11 @@
   .py-\[60px\] {
     padding-block: 60px;
   }
-  .py-\[62px\] {
-    padding-block: 62px;
-  }
   .py-\[69px\] {
     padding-block: 69px;
   }
   .py-\[80px\] {
     padding-block: 80px;
-  }
-  .py-\[83px\] {
-    padding-block: 83px;
   }
   .py-\[85px\] {
     padding-block: 85px;
@@ -1947,6 +1946,9 @@
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
+  }
+  .pb-\[7px\] {
+    padding-bottom: 7px;
   }
   .pb-\[18px\] {
     padding-bottom: 18px;
@@ -2198,9 +2200,6 @@
   }
   .text-\[\#FFFFFF1A\] {
     color: #FFFFFF1A;
-  }
-  .text-\[36\] {
-    color: 36;
   }
   .text-black {
     color: var(--color-black);
@@ -3846,6 +3845,11 @@
       margin-top: 50px;
     }
   }
+  .tablet\:mt-\[90px\] {
+    @media (width >= 640px) {
+      margin-top: 90px;
+    }
+  }
   .tablet\:mt-auto {
     @media (width >= 640px) {
       margin-top: auto;
@@ -4105,6 +4109,11 @@
   .tablet\:flex-row {
     @media (width >= 640px) {
       flex-direction: row;
+    }
+  }
+  .tablet\:items-center {
+    @media (width >= 640px) {
+      align-items: center;
     }
   }
   .tablet\:items-end {
@@ -4412,6 +4421,11 @@
       padding-right: 44px;
     }
   }
+  .tablet\:pb-0 {
+    @media (width >= 640px) {
+      padding-bottom: calc(var(--spacing) * 0);
+    }
+  }
   .tablet\:pb-3\.5 {
     @media (width >= 640px) {
       padding-bottom: calc(var(--spacing) * 3.5);
@@ -4555,11 +4569,6 @@
     @media (width >= 640px) {
       --tw-leading: 70px;
       line-height: 70px;
-    }
-  }
-  .tablet\:text-\[1\] {
-    @media (width >= 640px) {
-      color: 1;
     }
   }
   .dekstop\:left-\[-57px\] {
@@ -4793,19 +4802,9 @@
       padding-block: calc(var(--spacing) * 20);
     }
   }
-  .dekstop\:py-\[6\] {
-    @media (width >= 1440px) {
-      padding-block: 6;
-    }
-  }
   .dekstop\:py-\[59px\] {
     @media (width >= 1440px) {
       padding-block: 59px;
-    }
-  }
-  .dekstop\:py-\[66px\] {
-    @media (width >= 1440px) {
-      padding-block: 66px;
     }
   }
   .dekstop\:py-\[72px\] {
