@@ -14,3 +14,7 @@ fileInput.addEventListener('change', () => {
     profileImage.setAttribute('src', imageUrl);
   }
 });
+
+document.getElementById('toggleImageProfileButtonMobile').addEventListener('click', function () {
+  document.getElementById('imageUploadInput').click();
+});

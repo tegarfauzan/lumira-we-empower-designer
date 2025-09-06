@@ -21,23 +21,19 @@
     <title>Lumira | Homepage</title>
   </head>
   <body class="bg-gray-400">
-    <div class="border-Lumira-Gray-200 bg-Lumira-Gray-50 tablet:grid-cols-4 dekstop:grid-cols-2 grid grid-cols-3 rounded-xl border p-1.5">
-      <div class="border-Lumira-Gray-200 dekstop:items-start dekstop:border-b-[0.5px] flex size-full flex-col items-center gap-1 border-r-[0.5px] p-6">
-        <p class="text-Lumira-Gray-900 tablet:text-[20px] tablet:leading-[30px] dekstop:text-base dekstop:leading-[24px] font-medium">89</p>
-        <h5 class="text-Lumira-Gray-500 tablet:text-[14px] tablet:leading-[20px] dekstop:text-xs dekstop:leading-[18px] text-xs leading-[18px]">Products</h5>
+    <div class="flex flex-col items-center gap-3">
+      <div class="content-header-image border-Lumira-Gray-200 relative mx-auto flex size-[120px] shrink-0 items-center justify-center overflow-hidden rounded-full border-2 bg-[#C6D0CB]">
+        <img id="profileImage" src="assets/images/profile/user-setting-image-1.png" alt="profile image" class="h-full w-full object-cover" />
+        <button id="toggleImageProfileButton" type="button" class="tablet:flex absolute top-0 left-0 hidden h-full w-full items-center justify-center bg-[#0B122099] opacity-0 backdrop-blur-xs transition-all duration-300 hover:opacity-100">
+          <img src="assets/images/icons/image-edit.svg" alt="icon" class="size-[27px] shrink-0" />
+        </button>
+        <input type="file" id="imageUploadInput" accept="image/*" class="hidden" />
       </div>
-      <div class="border-Lumira-Gray-200 tablet:flex dekstop:items-start dekstop:border-b-[0.5px] tablet:border-r-[0.5px] dekstop:border-r-0 hidden size-full flex-col items-center gap-1 border-l-[0.5px] p-6">
-        <p class="text-Lumira-Gray-900 tablet:text-[20px] tablet:leading-[30px] dekstop:text-base dekstop:leading-[24px] font-medium">1.890</p>
-        <h5 class="text-Lumira-Gray-500 tablet:text-[14px] tablet:leading-[20px] dekstop:text-xs dekstop:leading-[18px] text-xs leading-[18px]">likes</h5>
-      </div>
-      <div class="border-Lumira-Gray-200 dekstop:items-start dekstop:border-t-[0.5px] tablet:border-l-[0.5px] dekstop:border-l-0 flex size-full flex-col items-center gap-1 border-r-[0.5px] p-6">
-        <p class="text-Lumira-Gray-900 tablet:text-[20px] tablet:leading-[30px] dekstop:text-base dekstop:leading-[24px] font-medium">2.790</p>
-        <h5 class="text-Lumira-Gray-500 tablet:text-[14px] tablet:leading-[20px] dekstop:text-xs dekstop:leading-[18px] text-xs leading-[18px]">Followers</h5>
-      </div>
-      <div class="border-Lumira-Gray-200 dekstop:items-start dekstop:border-t-[0.5px] flex size-full flex-col items-center gap-1 border-l-[0.5px] p-6">
-        <p class="text-Lumira-Gray-900 tablet:text-[20px] tablet:leading-[30px] dekstop:text-base dekstop:leading-[24px] font-medium">54</p>
-        <h5 class="text-Lumira-Gray-500 tablet:text-[14px] tablet:leading-[20px] dekstop:text-xs dekstop:leading-[18px]">Following</h5>
-      </div>
+      <button id="toggleImageProfileButton" type="button" class="tablet:hidden flex items-center gap-[2px] hover:cursor-pointer">
+        <img src="assets/images/icons/image-edit-blue.svg" alt="icon" class="size-[24px] shrink-0" />
+        <p class="text-Lumira-Indigo-600 text-sm leading-[20px] font-medium">Upload new picture</p>
+      </button>
+    </div>
     </div>
 
     <!-- Third-party Scripts -->
