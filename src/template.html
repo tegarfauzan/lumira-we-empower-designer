@@ -21,8 +21,8 @@
     <title>Lumira | Homepage</title>
   </head>
   <body class="bg-gray-400">
-    <section id="ProductDetailDescription" class="mx-auto flex flex-col tablet:flex-row max-w-[1232px] gap-[14px]">
-      <div class="flex max-w-[818px] flex-col gap-5">
+    <section id="ProductDetailDescription" class="mx-auto flex flex-col tablet:flex-row max-w-[1232px] gap-2 tablet:gap-[14px]">
+      <div class="flex max-w-[818px] flex-col gap-2 tablet:gap-5">
         <section id="Description" class="bg-Lumira-Gray-50 border-Lumira-Gray-200 text-Lumira-Gray-500 flex flex-col gap-5 rounded-[18px] border px-[18px] tablet:px-[36px] dekstop:px-[40px] pt-[32px] pb-[32px] tablet:pb-[40px] leading-[24px]">
           <h3 class="text-Lumira-Gray-900 text-[20px] leading-[30px] tablet:text-2xl tablet:leading-[32px] font-semibold">Description</h3>
           <p>Streamline your app development with our comprehensive Furniture E-commerce UI Kit. Designed for mobile applications, this kit features a sleek and modern interface for browsing, shopping, and purchasing furniture online. It includes beautifully crafted screens for product discovery, detailed views, shopping carts, and checkout processes.</p>
@@ -197,12 +197,12 @@
         </section>
       </div>
       <div>
-        <div class="cta sticky top-[104px] flex flex-col gap-[14px]">
-          <div class="cta-price bg-Lumira-Gray-50 border-Lumira-Gray-200 flex flex-col gap-6 rounded-[12px] border p-6">
+        <div class="cta sticky top-[104px] flex flex-col gap-2 tablet:gap-[14px] min-w-[280px]">
+          <div class="cta-price bg-Lumira-Gray-50 border-Lumira-Gray-200 flex flex-col gap-6 rounded-[12px] border p-2 tablet:p-6">
             <div class="flex flex-col px-[10px] tablet:px-3 gap-2 tablet:gap-3">
               <div class="flex flex-col dekstop:flex-row gap-3 dekstop:gap-0 items-center justify-between">
-                <div class="container-dropdown group peer relative">
-                  <button type="button" class="button-dropdown border-Lumira-Gray-200 group-[.open]:border-Lumira-Gray-400 group-hover:border-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-[20px] py-[15px] transition-all duration-300 focus:outline-none">
+                <div class="container-dropdown group peer relative w-full dekstop:w-fit">
+                  <button type="button" class="button-dropdown w-full justify-between border-Lumira-Gray-200 group-[.open]:border-Lumira-Gray-400 group-hover:border-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-[20px] py-[15px] transition-all duration-300 focus:outline-none">
                     <p class="button-dropdown-title text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Starter License</p>
                     <div class="button-dropdown-icon text-Lumira-Gray-900 transition-all duration-300 group-[.open]:rotate-180">
                       <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -211,7 +211,7 @@
                     </div>
                   </button>
 
-                  <div class="dropdown-content absolute left-0 z-50 h-0 overflow-hidden pt-[5px] transition-all duration-300 group-[.open]:h-fit">
+                  <div class="dropdown-content absolute left-0 z-50 hidden pt-[5px] transition-all duration-300 group-[.open]:block">
                     <div class="border-Lumira-Gray-200 flex w-[220px] flex-col gap-2 rounded-[12px] border bg-[#F9FAFBCC] p-[6px] shadow-xl shadow-[#00000014] backdrop-blur-xl">
                       <div class="group/child-dropdown">
                         <button class="dropdown-content-list w-full" type="button">
@@ -240,15 +240,15 @@
                     </div>
                   </div>
                 </div>
-                <strong class="text-Lumira-Gray-900 text-end text-[24px] leading-[32px] font-semibold">IDR 200.000</strong>
+                <strong class="text-Lumira-Gray-900 mr-auto dekstop:text-end text-[24px] leading-[32px] font-semibold">IDR 200.000</strong>
                 <div class="product-detail-discount hidden">
                   <strong class="text-Lumira-Rose-600 text-end text-[24px] leading-[32px] font-semibold">IDR 100.000</strong>
                   <p class="text-Lumira-Gray-200 text-end text-xs leading-[18px] font-semibold line-through">Save IDR 100.000</p>
                 </div>
                 <strong class="free text-Lumira-Gray-900 hidden text-2xl leading-[32px] font-semibold">Free</strong>
               </div>
-              <p class="text-Lumira-Gray-500 px-2 text-sm leading-[20px]">Valid for <span class="font-bold">one project</span> only. Ideal for individuals or small-scale personal or client use.</p>
-              <p class="free-description text-Lumira-Gray-500 hidden px-2 text-sm leading-[20px]">Free for <span class="font-bold">personal</span> and <span class="font-bold">non-commercial use</span> Attribution appreciated but not required, resale not allowed.</p>
+              <p class="text-Lumira-Gray-500 px-[10px] tablet:px-3 dekstop:px-2 text-sm leading-[20px]">Valid for <span class="font-bold">one project</span> only. Ideal for individuals or small-scale personal or client use.</p>
+              <p class="free-description text-Lumira-Gray-500 hidden px-[10px] tablet:px-3 dekstop:px-2 text-sm leading-[20px]">Free for <span class="font-bold">personal</span> and <span class="font-bold">non-commercial use</span> Attribution appreciated but not required, resale not allowed.</p>
             </div>
             <div class="flex flex-col gap-2">
               <button type="submit" class="free-btn bg-Lumira-Green-500 border-Lumira-Green-300 hover:ring-Lumira-Green-500 hidden rounded-[12px] border py-[18px] text-center font-semibold text-white transition-all duration-300 hover:ring-2 hover:ring-offset-1 text-[14px] leading-[20px] tablet:text-base tablet:leading-[24px]">Download</button>
@@ -258,7 +258,7 @@
               </a>
             </div>
           </div>
-          <div class="cta-list tablet:divide-y tablet:divide-x-0 divide-x dekstop:divide-y-0 dekstop:divide-x divide-Lumira-Gray-200 bg-Lumira-Gray-50 border-Lumira-Gray-200 flex flex-row tablet:flex-col dekstop:flex-row items-center justify-between rounded-[12px] border px-[12px] py-[12px]">
+          <div class="cta-list tablet:divide-y tablet:divide-x-0 divide-x dekstop:divide-y-0 dekstop:divide-x divide-Lumira-Gray-200 bg-Lumira-Gray-50 border-Lumira-Gray-200 flex flex-row tablet:flex-col dekstop:flex-row items-center justify-between rounded-[12px] border px-[6px] py-[6px] tablet:px-[12px] tablet:py-[12px]">
             <div class="flex w-full flex-col items-center justify-center gap-1 py-[12px]">
               <p class="text-Lumira-Gray-900 text-center font-medium">Figma</p>
               <h5 class="text-Lumira-Gray-500 text-center text-xs leading-[18px]">Compatibility</h5>
@@ -272,8 +272,8 @@
               <h5 class="text-Lumira-Gray-500 text-center text-xs leading-[18px]">Last update</h5>
             </div>
           </div>
-          <div class="update-log bg-Lumira-Gray-50 border-Lumira-Gray-200 flex flex-col gap-5 rounded-[12px] border px-[40px] py-[32px]">
-            <h5 class="text-Lumira-Gray-900 text-2xl leading-[32px] font-semibold">Update log</h5>
+          <div class="update-log bg-Lumira-Gray-50 border-Lumira-Gray-200 flex flex-col gap-5 rounded-[12px] border px-[18px] tablet:px-[36px] dekstop:px-[40px] py-[32px]">
+            <h5 class="text-Lumira-Gray-900 tablet:text-2xl tablet:leading-[32px] font-semibold text-xl leading-[30px]">Update log</h5>
             <div class="flex flex-col gap-4">
               <section class="update-list flex flex-col gap-2">
                 <button type="button" data-expand="UpdateLog1J" class="flex items-center gap-[10px]">
@@ -308,6 +308,48 @@
               </section>
             </div>
           </div>
+          <section id="Hastag" class="flex-wrap items-center gap-1.5 flex tablet:hidden">
+          <div class="hastag-list bg-Lumira-Gray-50 border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-1.5 rounded-full border px-4 py-[10px] transition-all duration-300 hover:ring-2 hover:ring-offset-1">
+            <img src="assets/images/icons/hastag-gray.svg" alt="icon" class="size-4 shrink-0" />
+            <p class="text-Lumira-Gray-500 text-sm leading-[20px] font-medium">furniture</p>
+          </div>
+          <div class="hastag-list bg-Lumira-Gray-50 border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-1.5 rounded-full border px-4 py-[10px] transition-all duration-300 hover:ring-2 hover:ring-offset-1">
+            <img src="assets/images/icons/hastag-gray.svg" alt="icon" class="size-4 shrink-0" />
+            <p class="text-Lumira-Gray-500 text-sm leading-[20px] font-medium">ecommerce</p>
+          </div>
+          <div class="hastag-list bg-Lumira-Gray-50 border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-1.5 rounded-full border px-4 py-[10px] transition-all duration-300 hover:ring-2 hover:ring-offset-1">
+            <img src="assets/images/icons/hastag-gray.svg" alt="icon" class="size-4 shrink-0" />
+            <p class="text-Lumira-Gray-500 text-sm leading-[20px] font-medium">checkout</p>
+          </div>
+          <div class="hastag-list bg-Lumira-Gray-50 border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-1.5 rounded-full border px-4 py-[10px] transition-all duration-300 hover:ring-2 hover:ring-offset-1">
+            <img src="assets/images/icons/hastag-gray.svg" alt="icon" class="size-4 shrink-0" />
+            <p class="text-Lumira-Gray-500 text-sm leading-[20px] font-medium">augmented</p>
+          </div>
+          <div class="hastag-list bg-Lumira-Gray-50 border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-1.5 rounded-full border px-4 py-[10px] transition-all duration-300 hover:ring-2 hover:ring-offset-1">
+            <img src="assets/images/icons/hastag-gray.svg" alt="icon" class="size-4 shrink-0" />
+            <p class="text-Lumira-Gray-500 text-sm leading-[20px] font-medium">reality</p>
+          </div>
+          <div class="hastag-list bg-Lumira-Gray-50 border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-1.5 rounded-full border px-4 py-[10px] transition-all duration-300 hover:ring-2 hover:ring-offset-1">
+            <img src="assets/images/icons/hastag-gray.svg" alt="icon" class="size-4 shrink-0" />
+            <p class="text-Lumira-Gray-500 text-sm leading-[20px] font-medium">modern</p>
+          </div>
+          <div class="hastag-list bg-Lumira-Gray-50 border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-1.5 rounded-full border px-4 py-[10px] transition-all duration-300 hover:ring-2 hover:ring-offset-1">
+            <img src="assets/images/icons/hastag-gray.svg" alt="icon" class="size-4 shrink-0" />
+            <p class="text-Lumira-Gray-500 text-sm leading-[20px] font-medium">customizable</p>
+          </div>
+          <div class="hastag-list bg-Lumira-Gray-50 border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-1.5 rounded-full border px-4 py-[10px] transition-all duration-300 hover:ring-2 hover:ring-offset-1">
+            <img src="assets/images/icons/hastag-gray.svg" alt="icon" class="size-4 shrink-0" />
+            <p class="text-Lumira-Gray-500 text-sm leading-[20px] font-medium">typography</p>
+          </div>
+          <div class="hastag-list bg-Lumira-Gray-50 border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-1.5 rounded-full border px-4 py-[10px] transition-all duration-300 hover:ring-2 hover:ring-offset-1">
+            <img src="assets/images/icons/hastag-gray.svg" alt="icon" class="size-4 shrink-0" />
+            <p class="text-Lumira-Gray-500 text-sm leading-[20px] font-medium">trending</p>
+          </div>
+          <div class="hastag-list bg-Lumira-Gray-50 border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-1.5 rounded-full border px-4 py-[10px] transition-all duration-300 hover:ring-2 hover:ring-offset-1">
+            <img src="assets/images/icons/hastag-gray.svg" alt="icon" class="size-4 shrink-0" />
+            <p class="text-Lumira-Gray-500 text-sm leading-[20px] font-medium">variable</p>
+          </div>
+        </section>
         </div>
       </div>
     </section>
