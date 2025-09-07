@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     previewBtn: document.getElementById('PreviewBtn'),
     modalPreview: document.getElementById('ModalPreview'),
     modalPreviewClose: document.getElementById('ModalPreviewClose'),
+    modalPreviewCloseMobileTablet: document.getElementById('ModalPreviewCloseMobileTablet'),
     modalPreviewToggleZoom: document.getElementById('ModalPreviewToggleZoom'),
     modalPreviewContent: document.getElementById('ModalPreviewContent'),
     modalPreviewButtons: document.getElementById('ModalPreviewButtons'),
@@ -36,9 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.previewBtn.addEventListener('click', openModal);
   }
 
-  // 2. Tombol 'Tutup' di modal untuk menutup modal
+  // 2. Tombol 'Tutup' di modal untuk menutup modal (Desktop dan Mobile/Tablet)
   if (elements.modalPreviewClose) {
     elements.modalPreviewClose.addEventListener('click', closeModal);
+  }
+  if (elements.modalPreviewCloseMobileTablet) {
+    elements.modalPreviewCloseMobileTablet.addEventListener('click', closeModal);
   }
 
   // 3. Tombol 'Zoom' untuk memperbesar/memperkecil konten modal
