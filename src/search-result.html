@@ -1137,7 +1137,7 @@
             </div>
           </div>
           <div class="group tablet:block dekstop:hidden hidden">
-            <button type="button" id="HamburgerTabletButton" class="relative shrink-0">
+            <button type="button" data-accordion="Hamburger-Tablet-Button-J" id="" class="relative shrink-0">
               <div class="dark-mode border-Lumira-Gray-200 bg-Lumira-Gray-50 group-[&.scroll]/scroll:border-Lumira-Gray-700 flex size-[48px] items-center justify-center rounded-full border transition-all duration-300 group-[&.scroll]/scroll:bg-[#101828B2]">
                 <div class="hidden group-[&.scroll]/scroll:block">
                   <img src="assets/images/icons/menu-two-line.svg" alt="menu" class="size-6 shrink-0 transition-all duration-300 group-[.hamburger-mobile-toggle]/mobile-toggle:opacity-0" />
@@ -1149,20 +1149,23 @@
                 </div>
               </div>
             </button>
-            <div id="DropdownHamburgerTablet" class="absolute right-0 z-1000 w-full pt-5">
-              <div class="border-Lumira-Gray-200 group-[&.scroll]/scroll:border-Lumira-Gray-700 hidden w-full rounded-[18px] border bg-white px-[8px] py-6 transition-all duration-300 group-hover:block group-[&.scroll]/scroll:bg-[#303241]">
+            
+            <div id="Hamburger-Tablet-Button-J" class="absolute hidden right-0 z-1000 w-full pt-5">
+              <div class="border-Lumira-Gray-200 group-[&.scroll]/scroll:border-Lumira-Gray-700 w-full rounded-[18px] border bg-white px-[8px] py-6 transition-all duration-300 group-[&.scroll]/scroll:bg-[#303241]">
                 <div class="flex flex-col gap-6">
-                  <div class="ui-kit-tablet flex flex-col gap-3">
-                    <button type="button" data-accordion="Ui-Kit-Tablet-J" class="flex cursor-pointer items-center justify-between px-4">
+                  <div class="ui-kit-tablet group/child flex flex-col gap-3">
+                    <a href="browse-all-uikit.html">
+                    <div class="flex cursor-pointer items-center justify-between px-4">
                       <h5 class="text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 font-medium">UI Kit</h5>
-                      <svg class="dark hidden text-white transition-all duration-300 group-[&.scroll]/scroll:block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="dark hidden group-hover/child:-rotate-180 group-hover/child:text-white text-Lumira-Gray-400 transition-all duration-300 group-[&.scroll]/scroll:block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.66699 5.3335L8.00033 10.6668L13.3337 5.3335" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
-                      <svg class="light text-[#98A2B3] transition-all duration-300 group-[&.scroll]/scroll:hidden" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="light group-hover/child:-rotate-180 group-hover/child:text-Lumira-Gray-900 text-[#98A2B3] transition-all duration-300 group-[&.scroll]/scroll:hidden" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.16675 5.3335L8.50008 10.6668L13.8334 5.3335" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                       </svg>
-                    </button>
-                    <div id="Ui-Kit-Tablet-J" class="hidden">
+                    </div>
+                    </a>
+                    <div class="hidden group-hover/child:block">
                       <div class="flex flex-col gap-1">
                         <ul class="bg-Lumira-Indigo-25 grid grid-cols-4 gap-[8px] rounded-xl p-1.5 group-[&.scroll]/scroll:bg-[#2C2F63]">
                           <li class="group/child-first">
@@ -1348,17 +1351,19 @@
                     </div>
                   </div>
 
-                  <div class="website-tablet flex flex-col gap-3">
-                    <button type="button" data-accordion="Website-Tablet-J" class="flex cursor-pointer items-center justify-between px-4">
+                  <div class="website-tablet group/child flex flex-col gap-3">
+                    <a href="browse-all-website.html">
+                    <div class="flex cursor-pointer items-center justify-between px-4">
                       <h5 class="text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 font-medium">Website</h5>
-                      <svg class="dark hidden text-white transition-all duration-300 group-[&.scroll]/scroll:block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="dark hidden group-hover/child:-rotate-180 group-hover/child:text-white text-Lumira-Gray-400 transition-all duration-300 group-[&.scroll]/scroll:block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.66699 5.3335L8.00033 10.6668L13.3337 5.3335" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
-                      <svg class="light text-[#98A2B3] transition-all duration-300 group-[&.scroll]/scroll:hidden" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="light group-hover/child:-rotate-180 group-hover/child:text-Lumira-Gray-900 text-[#98A2B3] transition-all duration-300 group-[&.scroll]/scroll:hidden" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.16675 5.3335L8.50008 10.6668L13.8334 5.3335" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                       </svg>
-                    </button>
-                    <div id="Website-Tablet-J" class="hidden">
+                    </div>
+                    </a>
+                    <div class="hidden group-hover/child:block">
                       <div class="flex flex-col gap-1">
                         <ul class="bg-Lumira-Indigo-25 grid grid-cols-4 gap-[8px] rounded-xl p-1.5 group-[&.scroll]/scroll:bg-[#2C2F63]">
                           <li class="group/child-first">
@@ -1632,17 +1637,19 @@
                     </div>
                   </div>
 
-                  <div class="icon-tablet flex flex-col gap-3">
-                    <button type="button" data-accordion="Icon-Tablet-J" class="flex cursor-pointer items-center justify-between px-4">
+                  <div class="icon-tablet group/child flex flex-col gap-3">
+                    <a href="browse-all-icon.html">
+                    <div class="flex cursor-pointer items-center justify-between px-4">
                       <h5 class="text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 font-medium">Icon</h5>
-                      <svg class="dark hidden text-white transition-all duration-300 group-[&.scroll]/scroll:block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="dark hidden group-hover/child:-rotate-180 group-hover/child:text-white text-Lumira-Gray-400 transition-all duration-300 group-[&.scroll]/scroll:block" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.66699 5.3335L8.00033 10.6668L13.3337 5.3335" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
-                      <svg class="light text-[#98A2B3] transition-all duration-300 group-[&.scroll]/scroll:hidden" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="light group-hover/child:-rotate-180 group-hover/child:text-Lumira-Gray-900 text-[#98A2B3] transition-all duration-300 group-[&.scroll]/scroll:hidden" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.16675 5.3335L8.50008 10.6668L13.8334 5.3335" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                       </svg>
-                    </button>
-                    <div id="Icon-Tablet-J" class="hidden">
+                    </div>
+                    </a>
+                    <div class="hidden group-hover/child:block">
                       <div class="flex flex-col gap-1">
                         <ul class="bg-Lumira-Indigo-25 grid grid-cols-4 gap-[8px] rounded-xl p-1.5 group-[&.scroll]/scroll:bg-[#2C2F63]">
                           <li class="group/child-first">
@@ -1936,11 +1943,11 @@
                 <img src="assets/images/logos/company-mobile.svg" alt="company logo" class="tablet:h-[48px] tablet:w-[180px] absolute top-0 h-[36px] w-[107.48px] shrink-0 opacity-0 transition-all duration-300 group-[&.scroll]/scroll:opacity-100" />
               </a>
               <div class="flex items-center gap-1">
-                <a href="" class="shrink-0">
+                <button type="button" class="navbar-top-open-modal-btn shrink-0">
                   <div class="p-[12px]">
                     <img src="assets/images/icons/search-mobile.svg" alt="icon" class="size-6 shrink-0" />
                   </div>
-                </a>
+                </button>
                 <button type="button" id="NotificationMobileButton" class="shrink-0">
                   <div class="relative flex size-[48px] items-center justify-center">
                     <img src="assets/images/icons/notification-mobile.svg" alt="icon" class="size-6 shrink-0 transition-all duration-300 group-[.notification-mobile-toggle]/mobile-toggle:opacity-0" />
@@ -2764,7 +2771,7 @@
                 </button>
 
                 <div class="dropdown-content tablet:left-[-350px] dekstop:left-[-203px] absolute z-50 hidden pt-2 transition-all duration-300 group-[.open]:block">
-                  <div class="border-Lumira-Gray-200 tablet:w-[692px] dekstop:w-[436px] dekstop:flex-col flex gap-2 rounded-[12px] border bg-[#f9fafb7e] p-[6px] shadow-xl shadow-[#00000014] backdrop-blur-xl">
+                  <div class="border-Lumira-Gray-200 tablet:w-[692px] dekstop:w-[436px] dekstop:flex-col flex gap-2 rounded-[12px] border bg-[#f9fafbcc] p-[6px] shadow-xl shadow-[#00000014] backdrop-blur-lg">
                     <button type="button" class="dropdown-content-list group/child-format hover:border-Lumira-Gray-200 tablet:flex-col dekstop:flex-row tablet:justify-center tablet:px-[20px] dekstop:px-[40px] flex items-center gap-[12px] rounded-[8px] border border-transparent py-6 transition-all duration-300 hover:bg-white">
                       <img src="assets/images/icons/browse-all/all.svg" alt="icon" class="size-6 shrink-0" />
                       <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Any format</p>
@@ -2915,7 +2922,7 @@
                 </button>
 
                 <div class="dropdown-content absolute right-1/2 z-50 hidden translate-x-1/2 pt-2 transition-all duration-300 group-[.open]:block">
-                  <div class="group/reset-button-hide border-Lumira-Gray-200 flex w-[220px] flex-col gap-2 rounded-[12px] border bg-[#f9fafb7e] p-[6px] shadow-xl shadow-[#00000014] backdrop-blur-xl">
+                  <div class="group/reset-button-hide border-Lumira-Gray-200 flex w-[220px] flex-col gap-2 rounded-[12px] border bg-[#f9fafbcc] p-[6px] shadow-xl shadow-[#00000014] backdrop-blur-lg">
                     <div class="price-range flex flex-col gap-1">
                       <label class="price-range-inputs border-Lumira-Gray-200 focus-within:border-Lumira-Rose-600 flex items-center gap-1 rounded-lg border bg-white px-[14px] py-3 transition-all duration-300">
                         <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">IDR</p>
@@ -2957,7 +2964,7 @@
                 </button>
 
                 <div class="dropdown-content absolute right-0 z-50 hidden pt-2 transition-all duration-300 group-[.open]:block">
-                  <div class="border-Lumira-Gray-200 flex w-[220px] flex-col gap-2 rounded-[12px] border bg-[#f9fafb7e] p-[6px] shadow-xl shadow-[#00000014] backdrop-blur-xl">
+                  <div class="border-Lumira-Gray-200 flex w-[220px] flex-col gap-2 rounded-[12px] border bg-[#f9fafbcc] p-[6px] shadow-xl shadow-[#00000014] backdrop-blur-lg">
                     <div class="group/child-dropdown">
                       <button class="dropdown-content-list w-full" type="button">
                         <div class="group-hover/child-dropdown:border-Lumira-Gray-200 tablet:px-5 tablet:py-[14px] dekstop:p-[22px] flex items-center gap-2 rounded-[8px] border border-transparent transition-all duration-300 group-hover/child-dropdown:bg-white">
@@ -3689,8 +3696,8 @@
           <img src="assets/images/icons/x-mark-white.svg" alt="" class="size-[18px] shrink-0" />
         </div>
       </button>
-      <div class="navbar-top-modal-content flex size-full items-center justify-center">
-        <div class="h-[638px] w-[600px]">
+      <div class="navbar-top-modal-content relative flex size-full pt-[86px] justify-center">
+        <div class="px-4 tablet:px-0 pt-[calc(((100vh-760px)/2)+64px)] w-[600px]">
           <div class="flex flex-col gap-3">
             <form action="" class="peer">
               <div class="modal-content-search focus-within:ring-Lumira-Indigo-600 flex h-[70px] w-full items-center gap-3 rounded-full bg-white py-[6px] pr-[6px] pl-6 transition-all duration-300 focus-within:ring-3">
@@ -3704,8 +3711,8 @@
               </div>
             </form>
             <div class="container-lists peer-has-placeholder-shown:hidden">
-              <div class="modal-content-lists border-Lumira-Gray-200 flex h-[484px] w-full rounded-2xl border-[1.5px] bg-white px-[6px] pt-[6px] pb-3">
-                <div class="list flex w-full flex-col items-center gap-[6px] overflow-y-auto [&::-webkit-scrollbar]:hidden">
+              <div class="modal-content-lists border-Lumira-Gray-200 flex min-h-[300px] h-full overflow-hidden max-h-[calc(100vh-602px)] w-full rounded-2xl border-[1.5px] bg-white px-[6px] pt-[6px] pb-3">
+                <div class="list flex w-full flex-col items-center gap-[6px] min-h-[300px] h-full [&::-webkit-scrollbar]:hidden overflow-y-auto max-h-[calc(100vh-602px)]">
                   <div class="list hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex w-full items-center justify-between gap-4 rounded-[12px] border border-transparent p-[6px] transition-all duration-300">
                     <div class="list-image border-Lumira-Gray-200 relative flex h-[100px] w-[166px] shrink-0 items-center justify-center overflow-hidden rounded-lg border-[0.51px]">
                       <img src="assets/images/thumbnails/thumbnail-result-input-navtop.png" alt="thumbnails" class="h-full w-full object-cover" />
